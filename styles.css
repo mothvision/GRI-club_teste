@@ -1,0 +1,276 @@
+/* General Styling - Estilo geral da página */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --bege-claro: #c0b181;
+    --bege: #cab14d;
+    --azul-marinho: #37497c;
+    --cinza: #9e9e9e;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--bege-claro);
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cinza);
+}
+
+/* Card Section - Seção do Cartão */
+
+#card-match {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    border-radius: 15px;
+    max-width: 750px;
+    max-height: 250px;
+    margin: 30px auto 0px;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px #dddddd;
+}
+
+/* Role Box - Componente Cargo/Função */
+
+.supervisor-div {
+    position: absolute;
+    width:200px;
+}
+
+.supervisor {
+    color: var(--cinza);
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-size: .85rem;
+    font-weight: bold;
+    padding: 3px 7px;
+    bottom: 130px;
+    left: 5px;
+    position: absolute;
+    box-shadow: 0 0 10px 5px #dadada;
+}
+
+.supervisor:hover {
+    transform: scale(1.05);
+    transition: transform .6s ease-in-out;
+}
+
+/* Flag Component - Bandeira ao lado da imagem */
+
+.bandeira-div {
+    position: absolute;
+}
+
+.bandeira-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    padding: 2px;
+    position: absolute;
+    left: 100px;
+    bottom:-15px;
+    background-image: url("assets/SVG/malawi-flag.svg");
+    background-size: cover;
+}
+
+/* Image Styling - Personalização de Imagens */
+
+.flex-img-1 {
+    border-radius: 100px;
+}
+
+.flex-img-2{
+    display: flex;
+    align-self: flex-start;
+}
+
+.img-meeting {
+    width: 140px;
+    margin: 0 -28px 0 0;
+}
+
+/* Match Progress Bar - Barra de Afinidade */
+
+.progress-div {
+    width: 100%;
+    display: flex;
+    height:16px;
+}
+
+.progress{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height:auto;
+}
+
+.progress-bar{
+    height: 16px;
+    width:36%;
+    background-color: var(--azul-marinho);
+    border-radius: 20px;
+}
+
+.porcentagem-match {
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+/* Text Positioning - Posicionamento de Texto*/
+
+.flex-name{
+    flex:1;
+    margin: 0 10px;
+}
+
+.markets-text{
+   color: var(--azul-marinho);
+   font-weight: 700;
+}
+
+/* Button Styling - Personalização de Botões */
+
+.button-border {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--bege);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--bege);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button-border:disabled {
+    pointer-events: none;
+}
+
+.button-border:hover {
+    color: #fff;
+    background-color: var(--bege);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-border:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.button-fill {
+    appearance: none;
+    background-color: var(--bege);
+    box-sizing: border-box;
+    border: 0px solid;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button-fill:disabled {
+    pointer-events: none;
+}
+
+.button-fill:hover {
+    color: var(--bege);
+    background-color: transparent;
+    border: 2px solid var(--bege);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-fill:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.button-flex {
+    margin: 10px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+/* Icon Styling - Personalização de Ícones */
+
+.markets-star{
+    width: 100%;
+}
+
+.star-div{
+    display: flex;
+    align-self: flex-end;
+}
+
+.star-icon{
+    fill: var(--bege-claro);
+    cursor: pointer; 
+    width:20px;
+}
+
+.star-icon:hover{
+    transform: scale(1.2);
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    fill: var(--bege);
+}
+
+.chat-icon{
+    width:30px;
+    fill:#ffffff;
+}
+
+.button-fill:hover .chat-icon {
+    fill:var(--bege);
+}
+
+.chat-allign{
+    position: relative;
+    bottom:8px;
+    left:6px;
+}
